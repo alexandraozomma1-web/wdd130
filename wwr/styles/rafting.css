@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a7a5b7;
+    --secondary-color: #0A6A66;
+    --accent1-color: #000000;
+    --accent2-color: #e9c46a;
+    --heading-color: #17045c;
+    --text-color: #333333;
+    --background-color: #f5f5f5;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 0 15px #555;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+
+nav,
+p,
+article {
+    margin: 16px;
+    padding: 8px;
+
+}
+
+section {
+    margin: 16px 0;
+    padding: 8px 0;
+}
+
+section p {
+    width: 100%;
+    padding: 0 10px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 15px #555;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(10, 106, 102, 0.5);
+    color: white;
+    font-family: var(--heading-font);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero article img {
+    float: right;
+    width: 190px;
+    margin-left: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    margin-right: 10px;
+    box-shadow: 0 0 15px #555;
+}
+
+section h2 {
+    background-color: #03615a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px #555;
+}
+
+.hero article p {
+    margin: 0;
+}
+
+footer {
+    border-top: 2px solid #2E8B57;
+    padding-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
