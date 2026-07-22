@@ -17,18 +17,13 @@
     --secondary-color-transparent: rgba(10, 106, 102, 0.5);
     --mission-box-color: rgba(255, 255, 255, 0.7);
     --shadow-color: #555;
+    --header-footer-bg: #e0f2f1
 }
 
 body {
     font-family: var(--body-font);
     background-color: var(--background-color);
     color: var(--text-color);
-}
-
-header img {
-    width: 200px;
-    height: auto;
-    box-shadow: 0 0 15px var(--shadow-color);
 }
 
 header,
@@ -38,20 +33,87 @@ footer {
     margin: 0 auto;
 }
 
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    background-color: var(--header-footer-bg);
+    box-shadow: 0 0 15px var(--accent1-color);
+    border: 1px solid var(--secondary-color);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    display: block;
+    box-shadow: 0 0 15px var(--shadow-color);
+}
+
+header nav {
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent2-color);
+    border: 1px solid var(--accent1-color);
+    border-radius: 2px;
+}
+
+header nav ul li {
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--accent1-color);
+}
+
+header nav ul li:last-child {
+    border-right: none;
+}
+
+header nav ul li a {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: bold;
+    font-size: 0.99rem;
+    white-space: nowrap;
+    padding: 8px 0px;
+}
+
+header nav ul li a:hover {
+    background-color: #e0e0e0;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--heading-color);
 }
 
-.hero article h2 {
-    color: var(--accent1-color);
-    background: none;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-nav,
 p,
 article {
     margin: 16px;
@@ -61,6 +123,15 @@ article {
 section {
     margin: 16px 0;
     padding: 8px 0;
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px var(--shadow-color);
+    margin-bottom: 15px;
 }
 
 section p {
@@ -104,10 +175,169 @@ section p {
 
 }
 
+.hero article h2 {
+    color: var(--accent1-color);
+    background: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0;
+}
+
 .hero article img {
     float: right;
-    width: 190px;
+    width: 230px;
+    height: auto;
+    margin-top: -12px;
     margin-left: 15px;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+.hero article p {
+    margin: 0;
+}
+
+/* History Section */
+.history-section {
+    background-color: var(--background-color);
+    /* Light gray or white card fill */
+    border: 1px solid var(--accent1-color);
+    /* Outer box border */
+    box-shadow: 0 0 15px var(--accent1-color);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.history-section h2 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    /* Wireframe uses plain heading text */
+    box-shadow: 0 0 10px var(--shadow-color);
+    color: var(--accent2-color);
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.history-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.history-grid p {
+    line-height: 1.5;
+}
+
+/* Adventure Grid Layout */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--background-color);
+    box-shadow: 0 0 15px var(--accent1-color);
+    border: 1px solid var(--accent1-color);
+    padding: 20px;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+    color: var(--accent2-color);
+    margin-bottom: 15px;
+}
+
+.adventures figure {
+    text-align: center;
+    margin: 0;
+}
+
+.adventures figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adventures figcaption {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-footer-bg);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 15px var(--accent1-color);
+    /* padding-top: 15px; */
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: var(--heading-color);
+    text-align: center;
+    width: 100%;
+}
+
+/* 2. Inner Box Container for Social Media Icons */
+footer .socialmedia {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent2-color);
+    /* White box background for icons */
+    border: 1px solid var(--accent1-color);
+    /* Border around the social icons box */
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Individual Social Icon Buttons */
+footer .socialmedia a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0f2f1;
+    padding: 6px 10px;
+    /* Space around each icon */
+    border-right: 1px solid var(--accent1-color);
+    /* Divider line between social icons */
+    text-decoration: none;
+}
+
+/* Remove border from the last icon */
+footer .socialmedia a:last-child {
+    border-right: none;
+}
+
+footer .socialmedia img {
+    width: 28px;
+    /* Consistent icon size */
+    height: 28px;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* Hover state for social icon boxes */
+footer .socialmedia a:hover {
+    background-color: #e0e0e0;
 }
 
 .socialmedia a {
@@ -118,27 +348,4 @@ section p {
     width: 40px;
     margin-right: 10px;
     box-shadow: 0 0 15px var(--shadow-color);
-}
-
-section h2 {
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 0 15px var(--shadow-color);
-}
-
-.hero article p {
-    margin: 0;
-}
-
-footer {
-    border-top: 2px solid var(--secondary-color);
-    padding-top: 15px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
 }
