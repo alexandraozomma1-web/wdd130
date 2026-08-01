@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 650px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+/* Make form sections group elements neatly */
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+
+}
+
+label[for="feedback"],
+textarea {
+    grid-column: 1 / -1;
+    /* How to span full width in CSS grid? */
+    text-align: center;
+    /* Center text above textarea */
+    width: 100%
+}
+
+legend {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.5rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .75rem;
+    font-size: 1.2rem;
+    display: block;
+    margin: 1 rem auto;
+    width: 150px;
+    padding: 0.5rem 1rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0.5rem 0;
+    gap: 0.5rem;
+    align-items: left;
+
+}
+
+.column2 {
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 100%; */
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.column2 label {
+    text-align: right;
+}
+
+.column2 input {
+    width: 100%;
+}
+
+/* Make the textarea row stack vertically and fill 100% width */
+.full-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers the label text above the box */
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.textarea-label {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    /* Makes the box stretch to fill the card */
+}
+
+/* Make the Submit button centered and fixed width */
+button {
+    display: block;
+    margin: 1rem auto;
+    width: 160px;
+    padding: 0.6rem;
+    cursor: pointer;
+}
