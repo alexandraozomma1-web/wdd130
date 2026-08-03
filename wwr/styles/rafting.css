@@ -301,10 +301,6 @@ footer .socialmedia {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: var(--accent2-color);
-    /* White box background for icons */
-    border: 1px solid var(--accent1-color);
-    /* Border around the social icons box */
     border-radius: 2px;
     margin: 0;
     padding: 0;
@@ -356,10 +352,6 @@ footer .socialmedia a:hover {
     margin-right: 10px;
     box-shadow: 0 0 15px var(--shadow-color);
 }
-
-/* ===================================
-   CONTACT PAGE SPECIFIC STYLES
-   =================================== */
 
 /* Centered Company Info Header */
 .company-info {
@@ -455,7 +447,6 @@ footer .socialmedia a:hover {
     cursor: pointer;
 }
 
-/* Visually Distinguishable Submit Button */
 .contact-form button[type="submit"] {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
@@ -520,15 +511,6 @@ footer .socialmedia a:hover {
     font-weight: bold;
     font-size: 0.85rem;
     color: var(--heading-color);
-}
-
-/* Styling inside rafting.css */
-.map-container iframe {
-    border: none;
-    /* Replaces style="border:0" */
-    box-shadow: 0 0 10px var(--shadow-color);
-    width: 100%;
-    max-width: 100%;
 }
 
 .map-container {
