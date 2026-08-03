@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | WhiteWater Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description"
+      content="Get in touch with WhiteWater Rafting Company for inquiries, reservations, or feedback. Find our address, location map, and team details here.">
+    <meta name="author" content="Adaugo Alexandra Ozomma">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-wwr-blue.jpg" alt="whitewater rafting logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Company Info Header-->
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </section>
+
+        <!--Map & Form Section-->
+        <div class="contact-grid">
+            <section class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d253789.7510260554!2d8.077918513994376!3d6.33377405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1785709538442!5m2!1sen!2sng"
+                  width="600" height="450" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </section>
+
+            <form action="#" method="post" class="contact-form">
+                <div class="form-item">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <div class="form-item">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <fieldset class="radio-group">
+                    <legend>Message Purpose</legend>
+                    <label><input type="radio" id="inquiry" name="purpose" value="general" checked>
+                        General
+                        Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation
+                        Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website
+                        Suggestion</label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                      placeholder="Type here"></textarea>
+                </div>
+
+                <div class="form-item checkbox-item">
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        Please subscribe me to
+                        the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Employee Profiles Section -->
+    <section class="employees">
+        <h2>We Are Here to Serve You</h2>
+        <div class="employee-grid">
+            <figure>
+                <img src="images/employee1.jpg" alt="Profile of John Doe">
+                <figcaption>Jane Doe - General Manager</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee2.jpg" alt="Profile of Jane Smith">
+                <figcaption>John Smith - Lead River Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee3.jpg" alt="Profile of Alex Johnson">
+                <figcaption>Alex Johnson - Safety & Logistics Coordinator</figcaption>
+            </figure>
+        </div>
+    </section>
+    </main>
+
+    </main>
+    <footer>
+        <p>© 2026 WhiteWater Rafting Company | Alexandra Ozomma</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-square.jpg" alt="facebook logo">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-logo.jpg" alt="instagram logo">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter-logo.jpg" alt="twitter logo">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

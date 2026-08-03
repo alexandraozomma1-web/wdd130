@@ -300,6 +300,7 @@ footer p {
 footer .socialmedia {
     display: flex;
     align-items: center;
+    gap: 10px;
     background-color: var(--accent2-color);
     /* White box background for icons */
     border: 1px solid var(--accent1-color);
@@ -307,6 +308,8 @@ footer .socialmedia {
     border-radius: 2px;
     margin: 0;
     padding: 0;
+    background: transparent;
+    border: none;
 }
 
 /* 3. Individual Social Icon Buttons */
@@ -314,12 +317,15 @@ footer .socialmedia a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e0f2f1;
-    padding: 6px 10px;
+    background-color: var(--accent2-color);
+    border: 1px solid var(--accent1-color);
+    padding: 5px;
+    /* padding: 6px 10px; */
     /* Space around each icon */
     border-right: 1px solid var(--accent1-color);
     /* Divider line between social icons */
     text-decoration: none;
+    border-radius: 2px;
 }
 
 /* Remove border from the last icon */
@@ -333,6 +339,7 @@ footer .socialmedia img {
     height: 28px;
     margin: 0;
     box-shadow: none;
+    display: block;
 }
 
 /* Hover state for social icon boxes */
@@ -348,4 +355,184 @@ footer .socialmedia a:hover {
     width: 40px;
     margin-right: 10px;
     box-shadow: 0 0 15px var(--shadow-color);
+}
+
+/* ===================================
+   CONTACT PAGE SPECIFIC STYLES
+   =================================== */
+
+/* Centered Company Info Header */
+.company-info {
+    text-align: center;
+    margin: 20px 0 25px 0;
+}
+
+.company-info h1 {
+    font-size: 2rem;
+    color: var(--heading-color);
+    margin-bottom: 6px;
+}
+
+.company-info p {
+    margin: 2px 0;
+    padding: 0;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Two-Column Grid: Map (Left) & Form (Right) */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 20px 0 40px 0;
+    align-items: start;
+}
+
+/* Map Styling */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: none;
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+/* Form Layout & Controls */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-item label {
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+/* Radio Group Alignment */
+.radio-group {
+    border: 1px solid var(--accent1-color);
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.radio-group legend {
+    font-weight: bold;
+    color: var(--heading-color);
+    padding: 0 5px;
+}
+
+.radio-group label {
+    display: block;
+    margin: 5px 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Checkbox Alignment */
+.checkbox-item label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Visually Distinguishable Submit Button */
+.contact-form button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--shadow-color);
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--heading-color);
+}
+
+/* Employee Profiles Layout */
+.employees {
+    width: 100%;
+    max-width: 840px;
+    border: 1px solid var(--accent1-color);
+    box-shadow: 0 0 15px var(--accent1-color);
+    padding: 15px;
+    margin: 25px auto;
+    box-sizing: border-box;
+}
+
+.employees h2 {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.employee-grid figure {
+    flex: 0 1 180px;
+    text-align: center;
+    margin: 0;
+}
+
+.employee-grid img {
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 0 8px var(--shadow-color);
+}
+
+.employee-grid figcaption {
+    margin-top: 6px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: var(--heading-color);
+}
+
+/* Styling inside rafting.css */
+.map-container iframe {
+    border: none;
+    /* Replaces style="border:0" */
+    box-shadow: 0 0 10px var(--shadow-color);
+    width: 100%;
+    max-width: 100%;
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    /* Clips any unexpected iframe spillover */
 }
