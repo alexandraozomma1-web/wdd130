@@ -498,11 +498,6 @@ footer .socialmedia img {
     border-radius: 5px;
 }
 
-.cta h1 {
-    flex: 2;
-    font-style: var(--accent2-color);
-}
-
 .trip-card {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -543,13 +538,6 @@ table {
 th {
     background: var(--secondary-color);
     color: var(--accent2-color);
-}
-
-th,
-td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: center;
 }
 
 th,
