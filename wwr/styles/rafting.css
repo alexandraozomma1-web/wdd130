@@ -572,3 +572,60 @@ td {
     font-size: 0.95rem;
     line-height: 1.4;
 }
+
+.newsletter {
+    background-color: var(--header-footer-bg);
+    padding: 20px;
+    margin: 30px 0;
+    border: 1px solid var(--accent1-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+    text-align: center;
+    border-radius: 8px;
+    width: 840px;
+    /* matches the other homepage boxes */
+    margin-left: auto;
+    margin-right: auto;
+    /* centers the box */
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* keeps it responsive */
+    margin-bottom: 15px;
+}
+
+.newsletter .form-item {
+    flex: 1 1 250px;
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--heading-color);
+}
